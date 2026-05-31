@@ -69,6 +69,7 @@ interface PanelLayout {
 }
 
 interface PanelConfig extends PanelLayout {
+  src: string;
 }
 
 interface GroupConfig {
