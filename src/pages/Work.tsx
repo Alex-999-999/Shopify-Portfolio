@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import noiseTexture from "@/assets/noise-tex.webp";
+import shopifyLogo from "@/assets/Shopify Logo/Shopify Logo.png";
 import { MenuOverlay } from "@/components/MenuOverlay";
 import { WorkCornerMarks } from "@/components/WorkCornerMarks";
 import { WORK_SERVICES, DESKTOP_PREVIEW_ASPECT } from "@/lib/workServices";
@@ -11,6 +12,18 @@ const BODY_FONT = "'Inter', system-ui, sans-serif";
 function WorkIntro() {
   return (
     <>
+      <div className="relative mb-5 h-32 w-32 overflow-hidden rounded-full">
+        <img
+          src={shopifyLogo}
+          alt="Shopify"
+          className="h-full w-full object-cover"
+          draggable={false}
+        />
+        <div
+          className="pointer-events-none absolute inset-0 rounded-full shadow-[inset_0_0_26px_rgba(0,0,0,0.95)]"
+          aria-hidden
+        />
+      </div>
       <h1 className="text-[clamp(2.25rem,5vw,3.5rem)] font-semibold leading-[1.05] tracking-[-0.02em] text-white">
         What I can offer
       </h1>
